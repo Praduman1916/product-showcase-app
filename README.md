@@ -29,12 +29,9 @@ This is a responsive and user-friendly product showcase web application built us
 - Installable as a Progressive Web App (PWA)
 
 ---
-
-```markdown
 ## Folder Structure
 
-```
-
+```plaintext
 src/
 ├── api/                 # API requests
 ├── assets/              # Images, logo
@@ -51,8 +48,6 @@ src/
 ├── index.js
 ├── index.css
 
-```
-```
 
 ---
 
