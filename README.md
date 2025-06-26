@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+```md
+# Product Showcase Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive and user-friendly product showcase web application built using React.js and Tailwind CSS. It allows users to browse a list of products, filter by category and price range, sort the products, view product details with reviews, and manage a shopping cart. The application is also PWA-ready for installation on supported devices.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React 18 (Create React App)
+- Tailwind CSS 
+- Responsive design using mobile-first approach
+- REST API: FakeStoreAPI
+- Toast notifications using react-toastify
+- LocalStorage for managing cart state
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Display product cards with image, title, price, and rating
+- Filter products by category and price range
+- Sort products by name, price, or popularity
+- Paginate products (10 per page)
+- View detailed product information with reviews
+- Add and remove items from the cart with quantity control
+- Show loading skeletons during data fetch
+- Toast messages for user feedback (e.g., item added to cart)
+- Installable as a Progressive Web App (PWA)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/
+├── api/                 # API requests
+├── assets/              # Images, logo
+├── components/          # Shared UI components
+│   ├── common/          # Pagination
+│   ├── product/         # ProductCard
+├── features/            # Filters and sort logic
+│   ├── filter/          # FilterSidebar
+│   └── sort/            # SortOptionsDropdown
+├── layouts/             # Header and layout components
+├── pages/               # Home, ProductDetail, Cart pages
+├── routes/              # App routing
+├── App.js
+├── index.js
+├── index.css
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+````
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/Praduman1916/product-showcase-app
+cd product-showcase-app
+````
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Install dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Start the development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+### 4. Build for production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+| Home Page                     | Product Detail                     | Cart Page                     |
+| ----------------------------- | ---------------------------------- | ----------------------------- |
+| ![Home](./screenshots/home.png) | ![Detail](./screenshots/details.png) | ![Cart](./screenshots/cart.png) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Deploy on vercel .
+[Click here to view the live site](https://product-showcase-app-two.vercel.app/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## GitHub Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://github.com/Praduman1916/product-showcase-app](https://github.com/Praduman1916/product-showcase-app)
+
+---

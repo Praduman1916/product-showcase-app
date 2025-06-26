@@ -26,7 +26,7 @@ const Cart = () => {
             updated[index].quantity += delta;
             if (updated[index].quantity <= 0) {
                 updated.splice(index, 1);
-                toast.info('🗑️ Item removed');
+                toast.info('Item removed');
             } else {
                 toast.success('Quantity updated');
             }
@@ -99,7 +99,7 @@ const Cart = () => {
                             Total: <span className="text-blue-600">${getTotal().toFixed(2)}</span>
                         </p>
                         <button
-                            onClick={() => toast.info('🛍️ Checkout coming soon!', {
+                            onClick={() => toast.info(' Checkout coming soon!', {
                                 position: 'top-center',
                                 autoClose: 2000,
                             })}
