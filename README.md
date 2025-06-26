@@ -30,6 +30,7 @@ This is a responsive and user-friendly product showcase web application built us
 
 ---
 
+```markdown
 ## Folder Structure
 
 ```
@@ -50,7 +51,8 @@ src/
 ├── index.js
 ├── index.css
 
-````
+```
+```
 
 ---
 
